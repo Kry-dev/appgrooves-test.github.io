@@ -1,17 +1,18 @@
 .best-apps {
     display: flex;
-    width: 100%;
     flex-direction: column;
+    width: 100%;
     &-list {
-        //display: flex;
         flex-direction: column;
     }
     .card {
-        margin-bottom: 1rem;
         padding-bottom: 1rem;
         border: 0;
         border-radius: 0;
         border-bottom: 2px solid $border-color;
+        & + .card {
+            margin-top: 1rem;
+        }
     }
     .carousel-item {
         .card {

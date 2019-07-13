@@ -4,6 +4,29 @@
     min-height: 100vh;
     background: $white;
     border: solid 1px $border-color;
+    &.collapse {
+        display: block;
+    }
+    @include media-breakpoint-down(md){
+        &.collapse {
+            display: none;
+        }
+        &.show {
+            display: block;
+        }
+        //margin-left: - $sidebar-width;
+        position: fixed;
+        top: 50px;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        background: rgba($black, .5);
+        z-index: 50;
+        .main-menu {
+            background: $white;
+            max-width: $sidebar-width;
+        }
+    }
 }
 .main-menu {
     display: flex;
