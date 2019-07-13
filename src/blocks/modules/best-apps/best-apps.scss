@@ -25,15 +25,29 @@
                 width: 100%;
                 max-width: 160px;
                 margin-right: 1rem;
+
                 img {
                     width: 100%;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    max-width: 100px;
+                    min-width: 100px;
                 }
             }
             &-title {
                 color: $body-color;
                 text-decoration: none;
+                @include media-breakpoint-down(sm) {
+                    font-size: 1.125rem;
+                }
                 a {
                     color: inherit;
+                }
+            }
+            &-text {
+                @include media-breakpoint-down(sm){
+                    display: none;
                 }
             }
         }

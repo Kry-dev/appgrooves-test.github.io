@@ -11416,6 +11416,19 @@ body {
     padding: .5rem;
   }
 
+  .best-apps .carousel-item .card-img {
+    max-width: 100px;
+    min-width: 100px;
+  }
+
+  .best-apps .carousel-item .card-title {
+    font-size: 1.125rem;
+  }
+
+  .best-apps .carousel-item .card-text {
+    display: none;
+  }
+
   .footer-nav-menu {
     column-count: 2;
   }
