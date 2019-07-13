@@ -1,19 +1,5 @@
 # gulp-pug-starter
 
-![GitHub release](https://img.shields.io/github/release/andreyalexeich/gulp-pug-starter.svg)
-[![dependencies Status](https://david-dm.org/andreyalexeich/gulp-pug-starter/status.svg)](https://david-dm.org/andreyalexeich/gulp-pug-starter)
-[![devDependencies Status](https://david-dm.org/andreyalexeich/gulp-pug-starter/dev-status.svg)](https://david-dm.org/andreyalexeich/gulp-pug-starter?type=dev)
-![GitHub stars](https://img.shields.io/github/stars/andreyalexeich/gulp-pug-starter.svg?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/andreyalexeich/gulp-pug-starter.svg?style=social)
-<a href="https://www.qiwi.com/n/ANDREYALEXEICH">
-<img src="https://img.shields.io/badge/%D0%97%D0%B0%D0%B4%D0%BE%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BD%D0%B0%20%D0%BF%D0%B8%D0%B2%D0%BE-Qiwi-orange.svg">
-</a>
-<a href="https://www.paypal.me/andreyalexeich/">
-<img src="https://img.shields.io/badge/%D0%97%D0%B0%D0%B4%D0%BE%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BD%D0%B0%20%D0%BF%D0%B8%D0%B2%D0%BE-PayPal-informational.svg">
-</a>
-<a href="https://www.tinkoff.ru/cardtocard/">
-<img src="https://img.shields.io/badge/%D0%97%D0%B0%D0%B4%D0%BE%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BD%D0%B0%20%D0%BF%D0%B8%D0%B2%D0%BE-%D0%9D%D0%B0%20%D0%BA%D0%B0%D1%80%D1%82%D1%83%20--%205536%209137%205288%201934-informational.svg">
-</a>
 
 ## Особенности
 * именование классов по [БЭМ](https://ru.bem.info/)
@@ -21,12 +7,11 @@
 * используются препроцессоры [Pug](https://pugjs.org/) и [SCSS](https://sass-lang.com/)
 * используется транспайлер [Babel](https://babeljs.io/) для поддержки современного JavaScript (ES6) в браузерах
 * используется [Webpack](https://webpack.js.org/) для сборки JavaScript-модулей
-* используется CSS-сетка [smart-grid](https://github.com/dmitry-lavrik/smart-grid) на основе Bootstrap для быстрой адаптивной вёрстки
 * используется жёсткий кодгайд
 
 ## Установка
 * установите [NodeJS](https://nodejs.org/en/) (если требуется) и [Yarn](https://yarnpkg.com/en/docs/install)
-* скачайте сборку в консоли с помощью [Git](https://git-scm.com/downloads): ```git clone https://github.com/andreyalexeich/gulp-pug-starter.git```
+* скачайте сборку в консоли с помощью [Git](https://git-scm.com/downloads): ```git clone https://github.com/Kry-dev/appgrooves-test.github.io```
 * установите ```gulp``` глобально: ```yarn global add gulp-cli```
 * перейдите в скачанную папку со сборкой: ```cd gulp-pug-starter```
 * скачайте необходимые зависимости: ```yarn```
@@ -168,64 +153,3 @@ entry: {
 }
 ```
 * подключить скомпилированные js-файлы на необходимых страницах 
-
-## CSS-сетка smart-grid
-В сборщик включена CSS-сетка [smart-grid](https://github.com/dmitry-lavrik/smart-grid) от [Дмитрия Лаврика](https://dmitrylavrik.ru/). Она позволяет избавиться от 
-лишних классов в разметке за счёт использования примесей в SCSS и ускоряет адаптивную вёрстку. Конфигурация уже настроена в соответствии с сеткой [Bootstrap](https://getbootstrap.com/). Пример использования:
-
-**SCSS**
-```scss
-.items{
-    @include row-flex();
-    @include md(justify-content, center);
- 
-    .item{
-        @include col();
-        @include size(3);
-        @include size-md(5);
-        @include size-xs(10);
-    }
-}
-```
-**Результат**
-```css
-.items {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-}
-.items .item {
-    box-sizing: border-box;
-    margin-left: 15px;
-    margin-right: 15px;
-    word-wrap: break-word;
-    width: calc(100% / 12 * 3 - 30px);
-}
-@media screen and (max-width: 992px) {
-    .items {
-        justify-content: center;
-    }
-    .items .item {
-        width: calc(100% / 12 * 5 - 30px);
-    }
-}
-@media screen and (max-width: 576px) {
-    .items .item {
-        width: calc(100% / 12 * 10 - 30px);
-    }
-}
-```
-
-## Нужен SCSS без Pug?
-Используйте [эту](https://github.com/andreyalexeich/gulp-scss-starter/) сборку.
-
-## Нравится проект?
-Сообщайте мне о [багах](https://github.com/andreyalexeich/gulp-pug-starter/issues), ставьте звёздочку в правом верхнем углу, задонатьте мне на пиво :beer:
-* [На Qiwi](https://www.qiwi.com/n/ANDREYALEXEICH)
-* [На PayPal](https://www.paypal.me/andreyalexeich)
-* [На карту - 5536 9137 5288 1934](https://www.tinkoff.ru/cardtocard/)
-
-## Контакты
-* ВКонтакте: [@andreyalexeich](https://vk.com/andreyalexeich)
-* Telegram: [@andreyalexeich](https://t-do.ru/andreyalexeich)
