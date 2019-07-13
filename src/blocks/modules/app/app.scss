@@ -1,0 +1,183 @@
+.app {
+    padding: 1rem;
+    width: 100%;
+    &-main {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+    }
+    &-logo-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80px;
+        @include media-breakpoint-down(sm){
+            width: 70px;
+        }
+    }
+    &-logo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: .25rem;
+        @include media-breakpoint-down(sm){
+            width: 70px;
+            height: 70px;
+        }
+    }
+    &-weight {
+        display: none;
+        font-size: 0.75rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        color: $gray-700;
+        @include media-breakpoint-down(sm) {
+            display: flex;
+        }
+    }
+    &-install {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        @include media-breakpoint-down(sm){
+            top: 3rem;
+        }
+    }
+    &-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        margin-left: 1rem;
+    }
+    &-title {
+        font-size: 1.375rem;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        padding-right: 200px;
+        @include media-breakpoint-down(sm){
+            padding-right: 0;
+            font-size: 1.25rem;
+            letter-spacing: -0.3px;
+        }
+    }
+    &-subtitle {
+        font-size: 1rem;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+        color: $gray-700;
+        margin-top: 0.3125rem;
+        @include media-breakpoint-down(sm){
+            display: none;
+        }
+    }
+    &-review-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin-top: 0.3125rem;
+        font-size: 0.875rem;
+        @include media-breakpoint-down(sm){
+            padding-right: 125px;
+            flex-wrap: wrap;
+        }
+        @media screen and (max-width: 425px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &-rating {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: 0.875rem;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        margin-right: .5rem;
+        margin-top: .5rem;
+        .icon {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+    &-reviews {
+        font-size: 0.875rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $gray-700;
+        margin-right: .5rem;
+        margin-top: .5rem;
+    }
+    &-loads {
+        font-size: 0.875rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $gray-700;
+        margin-right: .5rem;
+        margin-top: .5rem;
+    }
+    &-os {
+        margin-right: .5rem;
+        margin-top: .5rem;
+    }
+    &-review-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: .5rem;
+        a {
+            padding: 0 .25rem;
+        }
+        a + a {
+            &:before {
+                content: "|";
+                margin-right: .5rem;
+                color: $gray-700;
+            }
+        }
+    }
+    &-badges {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+
+        .badge {
+            margin-right: .5rem;
+            margin-top: .5rem;
+        }
+    }
+    &-descr {
+        font-size: 1.125rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: 0.34px;
+        p {
+            margin-bottom: .5rem;
+        }
+    }
+}

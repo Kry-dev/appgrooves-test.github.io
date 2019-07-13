@@ -1,0 +1,50 @@
+//App description
+section.app
+    .app-main
+        .app-logo-box
+            img.app-logo(src="img/content/wish-icon.png", alt="Wish application")
+            .app-weight 63.7 MB
+        .app-info
+            h2.app-title Wish — Shopping Made Fun
+            h6.app-subtitle Wish Inc.
+            .app-review-box
+                .app-rating
+                    span 4.5
+                    +icon('star-full','')
+                .app-reviews
+                    span 7M
+                    |  Reviews
+                .app-loads
+                    +icon('shape','')
+                    span 100M +
+                .app-os
+                    +icon('android','')
+                    +icon('apple-blue','')
+                .app-review-links
+                    a(href="#") Shopping
+                    a(href="#") Report
+            .app-badges
+                .badge.badge-success-light
+                    +icon('user-green','')
+                    span Trending
+                .badge.badge-red-light
+                    +icon('tag-trending','')
+                    span Trending
+                .badge.badge-purple-light
+                    +icon('tag-editor','')
+                    span Editor’s Choice
+                .badge.badge-light
+                    +icon('tag-iap','')
+                    span In-App Purchases
+        .app-install.btn-group
+            button.btn.btn-primary.dropdown-toggle.text-uppercase(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                +icon('dl','mr-1')
+                | Install
+            .dropdown-menu
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Action
+
+    .app-descr
+        p Get fashion, shoes, electronics, kitchen gadgets & more at 60-90% off and other benefits! 💰
+//end of App description

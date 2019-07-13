@@ -35,13 +35,14 @@ $grays: map-merge(
 $blue:         #3981e5;
 $blue-dark:    #015a75;
 $purple:       #a65ce7;
-$purple-transparent:       rgba($purple, 0.12);
+$purple-light:       rgba($purple, 0.12);
 $pink:         #e83e8c;
 $red:          #ff512f;
-$red-transparent:          rgba($red, 0.12);
+$red-light:          rgba($red, 0.12);
 $orange:       #fd7e14;
 $yellow:       #f4b61e;
 $green:        #37b779;
+$green-light:  #e7f6ef;
 $teal:         #e7f6ef;
 $cyan:         #17a2b8;
 
