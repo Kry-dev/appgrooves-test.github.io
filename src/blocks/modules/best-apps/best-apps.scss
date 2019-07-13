@@ -1,0 +1,54 @@
+.best-apps {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    &-list {
+        //display: flex;
+        flex-direction: column;
+    }
+    .card {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 2px solid $border-color;
+    }
+    .carousel-item {
+        .card {
+            bottom: 0;
+            padding: 0;
+            & + .card {
+                margin-top: 1rem;
+            }
+            &-img {
+                width: 100%;
+                max-width: 160px;
+                margin-right: 1rem;
+                img {
+                    width: 100%;
+                }
+            }
+            &-title {
+                color: $body-color;
+                text-decoration: none;
+                a {
+                    color: inherit;
+                }
+            }
+        }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 24px;
+        height: 40px;
+        background: rgba($black, .52);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .carousel-control-prev {
+        left: -1rem;
+    }
+    .carousel-control-next {
+        right: -1rem;
+    }
+}

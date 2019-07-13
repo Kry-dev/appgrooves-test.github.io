@@ -33,32 +33,33 @@
             }
         }
     }
-    &-stats {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: flex-start;
-        p {
-            font-size: 0.875rem;
-            font-weight: 400;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            color: $gray-700;
-            & + p {
-                padding-left: 1rem;
-                position: relative;
-                &:before {
-                    content: "";
-                    position: absolute;
-                    left: .5rem;
-                    top: .5rem;
-                    width: 3px;
-                    height: 3px;
-                    border-radius: 50%;
-                    background-color: $gray-700;
-                }
+
+}
+.more-apps-stats {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    p {
+        font-size: 0.875rem;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $gray-700;
+        & + p {
+            padding-left: 1rem;
+            position: relative;
+            &:before {
+                content: "";
+                position: absolute;
+                left: .5rem;
+                top: .5rem;
+                width: 3px;
+                height: 3px;
+                border-radius: 50%;
+                background-color: $gray-700;
             }
         }
     }

@@ -1,6 +1,6 @@
 //Review Tabs
 section.review-tabs
-    ul#myTab.nav.nav-tabs(role='tablist')
+    ul#reviewTabs.nav.nav-tabs(role='tablist')
         li.nav-item
             a#summary-tab.nav-link.active(data-toggle='tab', href='#summary', role='tab', aria-controls='summary', aria-selected='true') Summary
         li.nav-item
@@ -11,11 +11,15 @@ section.review-tabs
             a#negative-reviews-tab.nav-link(data-toggle='tab', href='#negative-reviews', role='tab', aria-controls='contact', aria-selected='false') Negative Reviews
         li.nav-item
             a#related-apps-tab.nav-link(data-toggle='tab', href='#related-apps', role='tab', aria-controls='contact', aria-selected='false') Related Apps
-    #myTabContent.tab-content
-        #summary.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='summary-tab') ...
-        #review-by-editor.tab-pane.fade(role='tabpanel', aria-labelledby='review-by-editor-tab') ...
-        #positive-reviews.tab-pane.fade(role='tabpanel', aria-labelledby='positive-reviews') ...
-        #negative-reviews.tab-pane.fade(role='tabpanel', aria-labelledby='negative-reviews') ...
-        #related-apps.tab-pane.fade(role='tabpanel', aria-labelledby='related-apps') ...
+    #reviewTabsContent.tab-content
+        #summary.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='summary-tab')
+            include ../best-apps/best-apps
+
+        #review-by-editor.tab-pane.fade(role='tabpanel', aria-labelledby='review-by-editor-tab') 2
+        #positive-reviews.tab-pane.fade(role='tabpanel', aria-labelledby='positive-reviews') 3
+        #negative-reviews.tab-pane.fade(role='tabpanel', aria-labelledby='negative-reviews') 4
+        #related-apps.tab-pane.fade(role='tabpanel', aria-labelledby='related-apps') 5
+
+
 
 //end of Review Tabs
