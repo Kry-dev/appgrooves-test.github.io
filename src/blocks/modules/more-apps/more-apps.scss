@@ -9,7 +9,7 @@
             width: 50%;
             border: 0;
             @include media-breakpoint-down(sm){
-                width: 100%;
+                padding: .5rem;
             }
             &-title {
                 font-size: 1.125rem;
@@ -21,6 +21,14 @@
                 color: $body-color;
                 a {
                     color: inherit;
+                    &:hover,
+                    &:focus{
+                        text-decoration: none;
+                        opacity: .7;
+                    }
+                }
+                @include media-breakpoint-down(sm){
+                    font-size: 1rem;
                 }
             }
             &-text {
@@ -30,6 +38,9 @@
                 font-stretch: normal;
                 line-height: 1.39;
                 letter-spacing: normal;
+                @include media-breakpoint-down(sm){
+                    display: none;
+                }
             }
         }
     }
@@ -60,6 +71,9 @@
                 height: 3px;
                 border-radius: 50%;
                 background-color: $gray-700;
+            }
+            @include media-breakpoint-down(sm){
+                display: none;
             }
         }
     }
