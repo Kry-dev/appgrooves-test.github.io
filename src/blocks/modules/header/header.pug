@@ -1,0 +1,23 @@
+// Header
+header#header.header
+    .container.px-0
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+                +icon('menu','')
+            a.navbar-brand(href='/')
+                svg.svg(preserveAspectRatio='none')
+                    use(xlink:href='#logo')
+                span.sr-only AppGrooves - logo
+            //#navbarCollapse.collapse.navbar-collapse
+            ul.navbar-nav.ml-auto
+                li.nav-item
+                    a.nav-link(href='#')
+                        +icon('search','')
+                li.nav-item
+                    a.btn.btn-ask(href='#')
+                        span.d-none.d-md-block Ask App Recommendations
+                        span.d-block.d-md-none Ask
+                li.nav-item
+                    a.nav-link(href='#')
+                        +icon('login','')
+// end of Header

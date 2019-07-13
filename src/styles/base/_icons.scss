@@ -1,0 +1,17 @@
+.icon {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    &-menu {
+        width: 24px;
+        height: 24px;
+    }
+    &-search {
+        width: 24px;
+        height: 24px;
+    }
+    &-login {
+        width: 28px;
+        height: 28px;
+    }
+}

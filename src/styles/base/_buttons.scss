@@ -1,0 +1,15 @@
+.btn {
+    &-ask {
+        color: $white;
+        border: 1px solid $white;
+        border-radius: 1rem;
+        font-family: 'Roboto';
+        font-size: 0.875rem;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.37px;
+        text-transform: uppercase;
+    }
+}

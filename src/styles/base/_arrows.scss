@@ -1,0 +1,25 @@
+.arrow {
+    &-top {
+        @include arrow(top, $primary, 10px);
+    }
+    //&-right {
+    //    @include arrow(top, $primary, 10px);
+    //}
+    &-left {
+        display: inline-block;
+        border-right: 4px solid $primary;
+        border-bottom: 4px solid $primary;
+        width: 10px;
+        height: 10px;
+        transform: rotate(-225deg);
+    }
+
+    &-right {
+        display: inline-block;
+        border-right: 4px solid $primary;
+        border-bottom: 4px solid $primary;
+        width: 10px;
+        height: 10px;
+        transform: rotate(-45deg);
+    }
+}

@@ -1,0 +1,23 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+    - const title = "Wish — Shopping Made Fun"
+
+block content
+    +svg-placeholder
+    .wrapper
+        include ../blocks/modules/header/header
+        //Content
+        main.main(role="main")
+            .container
+                .row
+                    include ../blocks/modules/sidebar/sidebar
+                    #main-content.main-content.col
+                        include ../blocks/modules/more-apps/more-apps
+        //end of Content
+
+block scripts
+    // Scripts
+    script(src="../js/main.js")
+    //script(src="../js/vendor.js")

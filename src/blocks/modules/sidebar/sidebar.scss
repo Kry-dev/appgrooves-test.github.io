@@ -1,0 +1,36 @@
+.sidebar {
+    max-width: $sidebar-width;
+    height: 100%;
+    min-height: 100vh;
+    background: $white;
+    border: solid 1px $border-color;
+}
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    &-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1rem;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.75;
+        letter-spacing: 0.3px;
+        color: #212121;
+        padding: 0 1rem;
+        border-bottom: solid 1px $border-color;
+        .icon {
+            margin-right: 1rem;
+        }
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            color: #212121;
+            opacity: .7;
+            text-decoration: none;
+        }
+    }
+}

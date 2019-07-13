@@ -1,0 +1,8 @@
+mixin svg-placeholder
+    #svg-placeholder
+        include ../../img/sprites/sprite.svg
+
+mixin icon(name,mod)
+    - mod = mod || ''
+    svg(class="icon icon-" + name + ' ' + mod)
+        use(xlink:href="#ic-" + name)
